@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@theme{
+    --font-inter:"inter", system-ui, sans-serif;
+    --text-blue:#2563eb;
+    --bg-blue-900:#1e3a8a;
+    --bg-neutral-900:#0a0a0a;
+}
+
+.animate{
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes appear {
+
+    from{
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity:1;
+    }
+    
+}
