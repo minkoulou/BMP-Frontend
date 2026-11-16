@@ -11,7 +11,7 @@ export  function Navbar () {
 
      return(
         <>
-          <header className="bg-green-600 w-full z-50  h-10 flex itmes-center justify-center">
+          <header className="w-full z-50  h-10 flex itmes-center justify-center">
 
             <nav className="flex bg-white w-full max-w-6xl p-4 justify-center items-center">
 

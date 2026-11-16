@@ -1,16 +1,38 @@
-# React + Vite
+# BMP-HUB Stages
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Application web de demande de stage en ligne : consulter les offres, envoyer son CV et réserver un créneau d'entretien, sans créer de compte.
 
-Currently, two official plugins are available:
+## Fonctionnalités
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Consultation des offres publiées
+- Formulaire de demande avec envoi du CV
+- Réservation d'un créneau d'entretien
+- Tableau de bord administrateur pour suivre les demandes
 
-## React Compiler
+## Technologies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React + Vite
+- Tailwind CSS
+- React Router
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone https://github.com/minkoulou/BMP-HUB.git
+cd BMP-HUB
+npm install
+npm run dev
+```
+
+## Structure principale
+
+```
+src/
+├── components/
+├── pages/
+└── main.jsx
+```
+
+## Auteur
+
+Minkoulou Minkoulou Benoit Pascal
