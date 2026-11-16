@@ -11,9 +11,9 @@ export  function Navbar () {
 
      return(
         <>
-          <header className="bg-black h-10 flex itmes-center justify-center">
+          <header className="bg-green-600 w-full z-50  h-10 flex itmes-center justify-center">
 
-            <nav className="flex bg-blue-200 w-full max-w-7xl p-4 justify-center items-center">
+            <nav className="flex bg-white w-full max-w-6xl p-4 justify-center items-center">
 
                {/* logo + nom de l'application */}
 
@@ -31,7 +31,7 @@ export  function Navbar () {
                  <a href="#" className="hover:text-blue-700 hover:text-[14px] transition-hover duration-200 delay-75 hover:-translate-y-1">Comment postuler</a>
 
                  <div>
-                  <button className="border border-solid rounded-[5px] bg-blue-50 p-1 cursor-pointer transition delay-150 hover:-translate-y-1 hover:scale-100 duration-300 ">Espace admin</button>
+                  <button className="rounded-[5px] bg-blue-50 p-1 cursor-pointer transition delay-150 hover:-translate-y-1 hover:scale-100 duration-300 ">Espace admin</button>
                  </div>
 
                  <button className="border border-solid rounded-[5px] bg-blue-900 text-white p-1 cursor-pointer transition delay-150 hover:-translate-y-1 hover:scale-100 duration-300 ">Postuler</button>
@@ -41,21 +41,21 @@ export  function Navbar () {
 
                {/* btn offres et boutons  pour mobile*/}
 
-              { open && <div onClick={handleToggle} className="font-inter sm:hidden justify-between flex text-[13px] p-3 rounded-xl backdrop-blur-2xl flex-col border border-black gap-2 fixed right-0.5 top-10 w-1/2 h-1/3">
+              { open && <div onClick={handleToggle} className="font-inter sm:hidden flex text-[13px] p-3 justify-center itmes-center flex-col bg-white/10 backdrop-blur-md z-50 gap-6 fixed right-0 top-10 w-full h-1/3">
                  {/* Offres  */}
-                 <a href="#offre" className="animate ">Offres</a>
+                 <a href="#offre" className="animate delay-0 text-white">Offres</a>
 
                  {/* comment postuler */}
-                 <a href="#" className="animate ">Comment postuler</a>
+                 <a href="#" className="animate delay-600 text-white">Comment postuler</a>
 
                  {/* bouton espace admin */}
                  <div >
-                  <button className="animate hover:bg-blue-500 border bg-blue-50 border-solid rounded-[5px] p-2">Espace admin</button>
+                  <button className="animate delay-750 hover:bg-blue-500 border bg-blue-50 border-solid rounded-[5px] p-2">Espace admin</button>
                  </div>
                  
                  {/* bouton postuler */}
-                 <div className="w-full flex">
-                  <button className="animate border bg-blue-800 text-white border-solid rounded-[5px] pl-6 pt-2 pb-2 pr-6">Postuler</button>
+                 <div className="w-full flex ">
+                  <button className="animate delay-900 border bg-blue-800 text-white border-solid rounded-[5px] pl-6 pt-2 pb-2 pr-6">Postuler</button>
                  </div>
 
                </div>}
